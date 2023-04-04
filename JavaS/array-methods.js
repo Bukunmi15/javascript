@@ -68,3 +68,4 @@ for (let index = 0; index < all_students.length; index++) {
     const element = all_students[index];
     console.log(element);    
 }
+

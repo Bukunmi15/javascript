@@ -140,3 +140,43 @@ function max(a, b, c, d, e) {
 
 max(23,72,25,23,53)
 
+console.log('#####=====Adding figures together====####');
+
+score = [1,2,3,4,5,356]
+sum = 0
+for (i = 0; i < score.length; i++) {
+  sum += score[i]
+}
+console.log(sum);
+
+
+console.log('#####=====Adding figures together====####');
+
+
+function addup (array) { 
+  for (i = 0; i < numbers.length; i++) {
+    total += numbers[i]
+  }
+  
+  console.log(total);
+};
+
+let total  = 0
+let numbers = [2,39,38,274,293,38];
+addup (numbers); 
+
+
+
+// for Max 
+
+console.log('#######====Checking the biggest figure====########')
+
+let figures = [28,30,389,13,93,83,944,493,39]
+max_No = figures[0]
+
+for (i = 0; i <= figures.length; i++) {
+  if (figures[i] > max_No){
+   var max_No = figures[i]
+  }
+}
+console.log(max_No);

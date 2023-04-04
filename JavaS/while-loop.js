@@ -5,8 +5,9 @@
 // }
 
 
-let numbers = 0
-while (numbers < 50) {
-    console.log(numbers);
-    numbers +=5
+
+let number = 0 
+while (number < 10) {
+    console.log(number);
+    number += 2;
 }

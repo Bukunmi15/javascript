@@ -59,3 +59,31 @@ let people ={
 }
 console.log(people);
 console.log('The king name is '+ people.firstName + ' ' + people.lastName + ' and hes favourite child is ' + people.chilren[1] + ' , the mother of hes favourite child is ' + people.wifes[0]);
+
+
+
+
+
+
+
+
+let fruits = ['banana', 'orange', 'pinapple', 'water melon', 'cashew', 'pawpaw']
+let favoriteFruits = []
+let names = ['wale', 'ade', 'isabella', 'ronke', 'monalissa', 'richard']
+
+console.log(fruits[0])
+console.log(fruits[1])
+fruits.length >= 2
+  ? console.log('I have ' + fruits.length + ' fruits')
+  : console.log('I have a fruit ')
+
+
+
+names = ['tope', 'susan', 'john'];
+console.log(names, Math.floor(Math.random() * 3));
+
+function allNames(identifies){
+  return Math.floor(Math.random() * 3)
+}
+
+allNames(names);
