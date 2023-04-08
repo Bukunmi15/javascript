@@ -774,6 +774,61 @@ marshall.logAge();
 
 
 
+
+
+console.log('---------------------');
+
+
+class Dog extends Animal {
+    constructor (name, age, breed) {
+        super(name,age)
+        this.breed  = breed  
+    }
+
+    logBreed() {
+        console.log(`${this.name} is a  ${this.breed}`);
+    }
+    logAgeFromDog(){
+        super.logAge();
+    }
+}
+
+
+const mike = new Dog ('Mike', 4 ,'Bulldog')
+mike.logBreed();
+mike.logAge();
+
+
+class Cat extends Animal {
+    constructor (name, age) {
+        super(name,age)
+        this.breed  = breed  
+    }
+
+    logAgeFromCat(){
+        super.logAge();
+    }
+}
+
+
+console.log('----------------------');
+
+const Josh = new Animal ('Josh', 2)
+Josh.logAgeFromCat()
+Josh.eat();
+Josh.sleep();
+Josh.wakeUp();
+Josh.logAge();
+
+
+console.log('----------------------');
+
+
+
+
+
+
+
 // class asoRock {
 //     constructor(name, age) {
 //         console.log(`${this.name} is the next president of Nigeria`);
@@ -794,45 +849,3 @@ marshall.logAge();
 
 // Tinubu.sleep();
 // Tinubu.tribe();
-
-console.log('---------------------');
-
-
-class Dog extends Animal {
-    constructor (name, age, breed) {
-        super(name,age)
-        this.breed  = breed  
-    }
-
-    logBreed() {
-        console.log(`${this.name} is a  ${this.breed}`);
-    }
-    logAgeFromDog(){
-        super.logAge();
-    }
-}
-
-
-class Cat extends Animal {
-    constructor (name, age ) {
-        super(name,age)
-        this.breed  = breed  
-    }
-
-    logAgeFromCat(){
-        super.logAge();
-    }
-}
-
-const mike = new Dog ('Mike', 4 ,'Bulldog')
-mike.logBreed();
-mike.logAgeFromDog();
-
-console.log('----------------------');
-
-const Josh = new Dog ('Josh', 2)
-Josh.logAgeFromCat();
-Josh.eat();
-Josh.sleep();
-Josh.wakeUp();
-Josh.logAge();
